@@ -10,7 +10,7 @@ test-blockchain/data/**
 !test-blockchain/data/.gitkeep
 *.env
 bundle.js
-dist
+#dist
 
 
 *.tgz
