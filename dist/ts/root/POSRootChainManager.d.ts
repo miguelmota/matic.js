@@ -22,7 +22,7 @@ export default class POSRootChainManager extends ContractsBase {
     exitHermoine(burnTxHash: string, logSignature: string, options?: SendOptions): Promise<any>;
     getERC20ExitPayload(burnTxHash: string): Promise<string>;
     isExitProcessed(burnTxHash: string, logSignature: string): Promise<any>;
-    processReceivedMessage(contractAddress: address, txHash: string): Promise<any>;
+    processReceivedMessage(contractAddress: address, txHash: string, options?: SendOptions): Promise<any>;
     customPayload(txHash: string, eventSig: string): Promise<string>;
     approveERC20(rootToken: address, amount: BN | string, options?: SendOptions): Promise<any>;
     approveMaxERC20(rootToken: address, options?: SendOptions): Promise<any>;
